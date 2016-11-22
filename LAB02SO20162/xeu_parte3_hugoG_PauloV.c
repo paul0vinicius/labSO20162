@@ -50,6 +50,8 @@ int main() {
 				execve("./programs/sleep.sh", parameters, system_variables);
 			} else if ((strcmp(parameters[0], "ls")) == 0 || (strcmp(parameters[0], "ls\n")) == 0){
 				execve("./programs/ls.sh", parameters, system_variables);
+			} else if ((strcmp(parameters[0], "grep")) == 0){
+				execve("./programs/grep.sh", parameters, system_variables);
 			} else if ((strcmp(parameters[0], "pipe")) == 0){
 				pipe = true;
 				close(pipefd[1]);          /* Close unused write end */
@@ -72,8 +74,9 @@ int main() {
 		
 		}else if (pid > 0) { // parent
 			if (pipe) {
+				pipe = false;
 				close(pipefd[0]);          /* Close unused read end */
-				write(pipefd[1], parameters[1], strlen(parameters[1]));
+				write(pipefd[1], parameters[3], strlen(parameters[3]));
 				close(pipefd[1]);          /* Reader will see EOF */
 				wait(NULL);                /* Wait for child */
 				exit(EXIT_SUCCESS);
