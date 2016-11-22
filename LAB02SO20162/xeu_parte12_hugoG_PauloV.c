@@ -12,14 +12,13 @@ int main() {
 	char *system_variables[] = {};
 	size_t linecapp = 0;
 
-	//Verificar como definir esse babado aqui pra facilitar a leitura, etc
-	char *command = *parameters[0];
+	// Explicação mais clara do que é o argumento 0 do array de parâmetros.
+	//char *command = *parameters[0];
 
-	int i = 0;
-
-	getlogin_r(username, MAX_SIZE_USERNAME);
 	
 	while(1){
+		getlogin_r(username, MAX_SIZE_USERNAME);
+		//name = getlogin();
 		printf("%s => ", username);
 		getline(&line, &linecapp, stdin);
 		
@@ -27,9 +26,10 @@ int main() {
 		
 		if(pid == 0){ //child
 
-			// Modularizar isso para uma função
+			// Modularizar isso para uma função - Split
 			char *p = strtok(line, " ");
-		
+			
+			int i = 0;
 			while(p != NULL){
 				parameters[i] = p;
 				i++;
@@ -39,21 +39,26 @@ int main() {
 
 			// Será que tem como transformar em um case?
 			if (strcmp(parameters[0], "date\n") == 0){
-				execve("./date.sh", parameters, system_variables);
+				execve("./programs/date.sh", parameters, system_variables);
 			} else if (strcmp(parameters[0], "sleep") == 0){
-				execve("./sleep.sh", parameters, system_variables);
-			} else printf("Command not found\n");
+				execve("./programs/sleep.sh", parameters, system_variables);
+			} else if ((strcmp(parameters[0], "ls")) == 0 || (strcmp(parameters[0], "ls\n")) == 0){
+				execve("./programs/ls.sh", parameters, system_variables);
+			}
+			else printf("Command not found\n");
 
-			// Modularizar isso para uma função
+			// Modularizar isso para uma função - Limpeza do array de parâmetros após a leitura
 			int j = 0;
 			while(j < i){
 				parameters[j] = NULL;
 				j++;
 			}
 			//
+
+			_exit(EXIT_SUCCESS);
 		
 		}else if (pid > 0) { // parent
-			wait();
+			wait(NULL);
 		}else{ // fork failed
 			printf("fork() failed!\n");
         	return 1;
