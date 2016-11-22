@@ -1,2 +1,2 @@
 #!/bin/sh 
-date
+sleep $1
