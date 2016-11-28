@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <sys/types.h>
 
 #define USERNAME_SIZE 20
 
@@ -11,7 +12,7 @@ int main() {
 	char *line = NULL;
 	char username[USERNAME_SIZE] = "";
 	char path[] = "/bin/";
-	char *parameters[] = {0};
+	char *parameters[] = {NULL};
 	size_t linecapp = 0;
 	char *envp[] =
 	{
@@ -19,7 +20,7 @@ int main() {
 		"PATH=/bin:/usr/bin",
 		"TZ=UTC0",
 		"USER=paul0vinicius",
-		0
+		NULL
     };
 	
 	while(true){
@@ -40,17 +41,20 @@ int main() {
 				i++;
 				p = strtok(NULL, " \n");
 			}
+
+			parameters[i] = NULL;
+			//printf("%s\n", parameters);
 			//
 
-			for (int j = i; j > 0; j--)
-			{
-				printf("%s\n", parameters[j]);
-			}
+			// for (int j = i; j > 0; j--)
+			// {
+			// 	printf("%s\n", parameters[j]);
+			// }
 
 			strcat(path, parameters[0]);
 
 			printf("%s\n", path);
-			printf("%s\n", parameters[1]);
+			//printf("%s\n", parameters[1]);
 
 			execve(path, parameters, envp);
 
