@@ -12,7 +12,7 @@ int main() {
 	char *line = NULL;
 	char *username = NULL;
 	char path[] = "/bin/";
-	char *parameters[] = {NULL};
+	char *parameters[] = {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL};
 	size_t linecapp = 0;
 	char *envp[] =
 	{
@@ -27,29 +27,28 @@ int main() {
 		printf("%s => ", username);
 		getline(&line, &linecapp, stdin);
 		
+		// Modularizar isso para uma função - Split
+		char *p = strtok(line, " \n\0");
+			
+		int i = 0;
+		while(p != NULL){
+			parameters[i] = p;
+			i++;
+			p = strtok(NULL, " \n\0");
+		}
+
+		// O último parâmetro do array deve ser nulo, por isso, ao sair do array, o null é inserido.
+		parameters[i] = NULL;
+		
 		pid_t pid = fork();
 		
 		if(pid == 0){ // Processo filho
-
-			// Modularizar isso para uma função - Split
-			char *p = strtok(line, " \n");
-			
-			int i = 0;
-			while(p != NULL){
-				parameters[i] = p;
-				i++;
-				p = strtok(NULL, " \n");
-			}
-
-			// O último parâmetro do array deve ser nulo, por isso, ao sair do array, o null é inserido.
-			parameters[i] = NULL;
-
 			strcat(path, parameters[0]);
-			execve(path, parameters, envp);
+			execvp(parameters[0], parameters);
+			//execve(path, parameters, envp);
 
 			printf("Comando não encontrado!\n");
 			_exit(EXIT_FAILURE);
-
 		} else if (pid > 0) { // Processo pai
 			wait(NULL);
 		} else{ // Falha na criação do Fork
