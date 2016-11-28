@@ -10,8 +10,7 @@ int main() {
 	typedef enum {false, true} bool;
 
 	char *line = NULL;
-	char username[USERNAME_SIZE] = "";
-	char *name = NULL;
+	char *username = NULL;
 	char path[] = "/bin/";
 	char *parameters[] = {NULL};
 	size_t linecapp = 0;
@@ -23,10 +22,9 @@ int main() {
 		NULL
     };
 
-	name = getenv("USER");
+	username = getenv("USER");
 	while(true){
-		//getlogin_r(username, USERNAME_SIZE);
-		printf("%s => ", name);
+		printf("%s => ", username);
 		getline(&line, &linecapp, stdin);
 		
 		pid_t pid = fork();
