@@ -11,6 +11,7 @@ int main() {
 
 	char *line = NULL;
 	char username[USERNAME_SIZE] = "";
+	char *name = NULL;
 	char path[] = "/bin/";
 	char *parameters[] = {NULL};
 	size_t linecapp = 0;
@@ -19,18 +20,18 @@ int main() {
 		"HOME=/",
 		"PATH=/bin:/usr/bin",
 		"TZ=UTC0",
-		"USER=paul0vinicius",
 		NULL
     };
-	
+
+	name = getenv("USER");
 	while(true){
-		getlogin_r(username, USERNAME_SIZE);
-		printf("%s => ", username);
+		//getlogin_r(username, USERNAME_SIZE);
+		printf("%s => ", name);
 		getline(&line, &linecapp, stdin);
 		
 		pid_t pid = fork();
 		
-		if(pid == 0){ //child
+		if(pid == 0){ // Processo filho
 
 			// Modularizar isso para uma função - Split
 			char *p = strtok(line, " \n");
@@ -42,30 +43,20 @@ int main() {
 				p = strtok(NULL, " \n");
 			}
 
+			// O último parâmetro do array deve ser nulo, por isso, ao sair do array, o null é inserido.
 			parameters[i] = NULL;
-			//printf("%s\n", parameters);
-			//
-
-			// for (int j = i; j > 0; j--)
-			// {
-			// 	printf("%s\n", parameters[j]);
-			// }
 
 			strcat(path, parameters[0]);
-
-			printf("%s\n", path);
-			//printf("%s\n", parameters[1]);
-
 			execve(path, parameters, envp);
 
 			printf("Comando não encontrado!\n");
-			_exit(EXIT_SUCCESS);
+			_exit(EXIT_FAILURE);
 
-		} else if (pid > 0) { // parent
+		} else if (pid > 0) { // Processo pai
 			wait(NULL);
-		} else{ // fork failed
+		} else{ // Falha na criação do Fork
 			printf("fork() failed!\n");
-        	return 1;
+        	return -1;
 		}
 	}
 
