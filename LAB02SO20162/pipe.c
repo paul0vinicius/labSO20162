@@ -22,14 +22,17 @@ int main () {
     cpid = fork();
     
 	if (cpid == 0){
-		close(pipefd[1]);          /* Close unused write end */
-        while (read(pipefd[0], &buf, 1) > 0) write(STDOUT_FILENO, &buf, 1);
-        write(STDOUT_FILENO, "\n", 1);
-        close(pipefd[0]);
+		close(1);
+		dup(pipefd[1]);
+		close(pipefd[1]);
+		close(pipefd[0]);
 		execvp(parameters1[0], parameters1);
-		_exit(EXIT_FAILURE);
 	} else if (cpid > 0){
-		wait(NULL);
+		close(0);	/* ver *2a */
+		dup(pipefd[0]);
+		close(pipefd[0]);
+		close(pipefd[1]);
+		execvp(parameters2[0], parameters2);
 	} else return -1;
 	
 }
