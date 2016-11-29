@@ -32,30 +32,52 @@ int main() {
 		
 		// Modularizar isso para uma função - Split
 		char *p = strtok(line, " \n\0");
-			
+		
+		// Limpeza dos arrays após captura dos parâmetros
 		int i = 0;
 		int j = 0;
+		while (i < 8) {
+			//printf("%d\n", i);
+			parameters[i] = NULL;
+			i++;
+		}
+
+		while (j < 8) {
+			//printf("%d\n", j);
+			parameters_2[j] = NULL;
+			j++;
+		}
+		//
+
+		// Split dos parâmetros nos arrays
+		i = 0;
+		j = 0;
 		while(p != NULL){
 			if (strcmp(p, "|") == 0){
 				pipe_flag = true;
 				p = strtok(NULL, " \n\0");
 				while(p != NULL){
 					parameters_2[j] = p;
-					printf("parametro2:%s\n", parameters_2[j]);
+					//printf("parametro2:%s\n", parameters_2[j]);
 					j++;
 					p = strtok(NULL, " \n\0");
 				}
 				parameters[j] = NULL;
-			}else{
+			} else {
+				pipe_flag = false;
 				parameters[i] = p;
-				printf("parametro1:%s\n", parameters[i]);
+				//printf("parametro1:%s\n", parameters[i]);
 				i++;
 				p = strtok(NULL, " \n\0");
 			}
 			
 		}
+		//
 
 		// O último parâmetro do array deve ser nulo, por isso, ao sair do array, o null é inserido.
+
+		// O último parâmetro null do segundo array é inserido dentro do loop para evitar erros quando
+		// este array não for utilizado.
 		parameters[i] = NULL;	
 		
 		pid_t pid = fork();
@@ -63,9 +85,7 @@ int main() {
 		if(pid == 0){ // Processo filho
 			
 			if (!pipe_flag){
-				//strcat(path, parameters[0]);
 				execvp(parameters[0], parameters);
-				//execve(path, parameters, envp);
 			} else {
 				if (pipe(pipefd) == -1) {
 		        perror("pipe");
@@ -74,7 +94,6 @@ int main() {
 				pid_t pid_pipe = fork();
 
 				if(pid_pipe == 0) {
-					pipe_flag = false;
 					close(1);
 					dup(pipefd[1]);
 					close(pipefd[1]);
@@ -86,21 +105,10 @@ int main() {
 					close(pipefd[0]);
 					close(pipefd[1]);					
 					execvp(parameters_2[0], parameters_2);
-					//wait(NULL);
 				} else return -1;
 			}
 
 			printf("Comando não encontrado!\n");
-			while (i >= 0) {
-				printf("%d\n", i);
-				parameters[i] = NULL;
-				i--;
-			}
-			while (j >= 0) {
-				printf("%d\n", j);
-				parameters_2[j] = NULL;
-				j--;
-			}
 			_exit(EXIT_FAILURE);
 		} else if (pid > 0) { // Processo pai
 			wait(NULL);
