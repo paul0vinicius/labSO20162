@@ -6,6 +6,51 @@
 
 #define USERNAME_SIZE 20
 
+
+int escrita(char *param){
+	//FILE *arq;
+	int result;
+	//char Str[50];
+	//arq = fopen("log.txt", "rt");
+
+	char Str[100];
+	FILE *arq;
+
+	arq = fopen("log.txt", "a+");  // Cria um arquivo texto para gravação
+	if (arq == NULL) // Se não conseguiu criar
+	{
+		printf("Problemas na CRIACAO do arquivo\n");
+   		return -1;
+   	}
+   	strcpy(Str,param);
+	result = fputs(Str, arq);
+	if (result == EOF)
+    	printf("Erro na Gravacao\n");
+ 	fclose(arq);
+ }
+
+ int leitura(){
+	FILE *arq;
+  	char Linha[100];
+  	char *result;
+  	int i;
+  // Abre um arquivo TEXTO para LEITURA
+  	arq = fopen("log.txt", "a+");
+  	if (arq == NULL) {  // Se houve erro na abertura 
+     	printf("Problemas na abertura do arquivo\n");
+     	return -1;
+  	}
+  	i = 1;
+  	while (!feof(arq)) { // Lê uma linha (inclusive com o '\n')
+      	result = fgets(Linha, 100, arq);  // o 'fgets' lê até 99 caracteres ou até o '\n'
+      	if (result)  // Se foi possível ler
+	  	printf("%d : %s\n",i,Linha);
+      	i++;
+  	}
+  	fclose(arq);
+   }
+
+
 int main() {
 	typedef enum {false, true} bool;
 
@@ -24,12 +69,14 @@ int main() {
     };
     int pipefd[2];
     bool pipe_flag = false;
+    int track_flag = 0;
 
 	username = getenv("USER");
 	while(true){
+		char mem[256] = "";
 		printf("%s => ", username);
-		getline(&line, &linecapp, stdin);
-		
+		getline(&line, &linecapp, stdin);		
+
 		// Modularizar isso para uma função - Split
 		char *p = strtok(line, " \n\0");
 		
@@ -47,8 +94,11 @@ int main() {
 			parameters_2[j] = NULL;
 			j++;
 		}
-		//
-
+		
+		if (strcmp(p, "track") == 0){
+			track_flag = 1;
+		}
+		
 		// Split dos parâmetros nos arrays
 		i = 0;
 		j = 0;
@@ -83,9 +133,33 @@ int main() {
 		pid_t pid = fork();
 		
 		if(pid == 0){ // Processo filho
-			
+			strcat(mem,line);
+			strcat(mem, " || ");
+
+			char x[10];
+			sprintf(x, "%d", getpid());
+			strcat(mem, x);
+			strcat(mem, " || ");
+
+			sprintf(x, "%d", getuid ());
+			strcat(mem, x);
+			strcat(mem, " || ");
+
+			sprintf(x, "%d", getpgid(pid));
+			strcat(mem, x);
+			strcat(mem, " || \n");
+
+			escrita(mem);
+
 			if (!pipe_flag){
+				if (track_flag)
+					leitura();
+				if (pipe(pipefd) == -1) {
+        			perror("pipe");
+        			exit(EXIT_FAILURE);
+        		}
 				execvp(parameters[0], parameters);
+
 			} else {
 				if (pipe(pipefd) == -1) {
 		        perror("pipe");
@@ -107,10 +181,9 @@ int main() {
 					execvp(parameters_2[0], parameters_2);
 				} else return -1;
 			}
-
 			printf("Comando não encontrado!\n");
 			_exit(EXIT_FAILURE);
-		} else if (pid > 0) { // Processo pai
+		} else if (pid > 0) { // Processo pai	
 			wait(NULL);
 		} else{ // Falha na criação do Fork
 			printf("fork() failed!\n");
