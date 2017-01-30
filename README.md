@@ -4,3 +4,4 @@ O repositório contém as atividades referentes aos LABS semanais da disciplina.
 Atualmente, o repositório contém:
 
 - Laboratório 2 (Criação do Xeu)
+- Laboratório 3 (Medição de parâmetros utilizando o programa perf)

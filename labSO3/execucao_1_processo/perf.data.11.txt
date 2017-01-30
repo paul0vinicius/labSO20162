@@ -1,0 +1,35 @@
+a.out:2744            |   1379.761 ms |        3 | avg:    0.008 ms | max:    0.014 ms | max at:    525.927321 s
+
+
+ -----------------------------------------------------------------------------------------------------------------
+  Task                  |   Runtime ms  | Switches | Average delay ms | Maximum delay ms | Maximum delay at       |
+ -----------------------------------------------------------------------------------------------------------------
+  upstart-dbus-br:1941  |      0.133 ms |        1 | avg:    0.363 ms | max:    0.363 ms | max at:    527.023265 s
+  gnome-settings-:2033  |      0.215 ms |        2 | avg:    0.091 ms | max:    0.139 ms | max at:    527.023368 s
+  perf:2740             |      3.235 ms |        1 | avg:    0.024 ms | max:    0.024 ms | max at:    527.290296 s
+  rcu_sched:7           |      0.192 ms |       18 | avg:    0.021 ms | max:    0.154 ms | max at:    527.023495 s
+  kworker/u8:0:2728     |      0.521 ms |       20 | avg:    0.018 ms | max:    0.068 ms | max at:    526.273788 s
+  mysqld:(14)           |      0.428 ms |       35 | avg:    0.012 ms | max:    0.033 ms | max at:    525.986072 s
+  kworker/0:0:4         |      0.011 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:    526.827313 s
+  kworker/1:2:93        |      0.014 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:    526.815334 s
+  a.out:2744            |   1379.761 ms |        3 | avg:    0.008 ms | max:    0.014 ms | max at:    525.927321 s
+  gnome-shell:2113      |      3.587 ms |       23 | avg:    0.007 ms | max:    0.032 ms | max at:    526.874452 s
+  mission-control:2147  |      0.203 ms |        2 | avg:    0.007 ms | max:    0.008 ms | max at:    527.023230 s
+  kworker/3:0:2683      |      0.010 ms |        1 | avg:    0.005 ms | max:    0.005 ms | max at:    526.815345 s
+  gdbus:1241            |      0.089 ms |        2 | avg:    0.005 ms | max:    0.007 ms | max at:    527.022296 s
+  Xorg:1368             |      1.358 ms |       24 | avg:    0.005 ms | max:    0.017 ms | max at:    526.876182 s
+  nautilus:2211         |      0.062 ms |        1 | avg:    0.005 ms | max:    0.005 ms | max at:    526.651663 s
+  memcached:1358        |      0.018 ms |        1 | avg:    0.005 ms | max:    0.005 ms | max at:    526.701510 s
+  NetworkManager:1091   |      0.315 ms |        1 | avg:    0.005 ms | max:    0.005 ms | max at:    527.022069 s
+  thermald:1232         |      0.127 ms |        1 | avg:    0.004 ms | max:    0.004 ms | max at:    527.157562 s
+  core:1609             |      0.019 ms |        1 | avg:    0.004 ms | max:    0.004 ms | max at:    526.991164 s
+  gnome-terminal-:2638  |      0.533 ms |        6 | avg:    0.004 ms | max:    0.005 ms | max at:    526.874420 s
+  dbus-daemon:1018      |      0.920 ms |        1 | avg:    0.004 ms | max:    0.004 ms | max at:    527.022325 s
+  gmain:(2)             |      0.087 ms |        3 | avg:    0.004 ms | max:    0.005 ms | max at:    525.950899 s
+  kworker/2:1:2684      |      0.008 ms |        1 | avg:    0.003 ms | max:    0.003 ms | max at:    526.803303 s
+  ksoftirqd/2:18        |      0.016 ms |        1 | avg:    0.003 ms | max:    0.003 ms | max at:    525.927307 s
+  migration/3:22        |      0.000 ms |        1 | avg:    0.002 ms | max:    0.002 ms | max at:    525.910567 s
+ -----------------------------------------------------------------------------------------------------------------
+  TOTAL:                |   1391.865 ms |      152 |
+ ---------------------------------------------------
+

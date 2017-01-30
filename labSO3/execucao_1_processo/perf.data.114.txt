@@ -1,0 +1,30 @@
+a.out:2872            |   1292.413 ms |        3 | avg:    0.010 ms | max:    0.021 ms | max at:    548.428858 s
+
+
+ -----------------------------------------------------------------------------------------------------------------
+  Task                  |   Runtime ms  | Switches | Average delay ms | Maximum delay ms | Maximum delay at       |
+ -----------------------------------------------------------------------------------------------------------------
+  perf:2869             |      0.182 ms |        1 | avg:    0.036 ms | max:    0.036 ms | max at:    549.712113 s
+  pool:2855             |      0.032 ms |        1 | avg:    0.024 ms | max:    0.024 ms | max at:    548.815911 s
+  gnome-shell:2113      |      5.512 ms |       46 | avg:    0.019 ms | max:    0.075 ms | max at:    548.428754 s
+  gmain:2238            |      0.076 ms |        2 | avg:    0.013 ms | max:    0.022 ms | max at:    548.446892 s
+  rcu_sched:7           |      0.231 ms |       21 | avg:    0.012 ms | max:    0.027 ms | max at:    549.019540 s
+  mysqld:(14)           |      0.372 ms |       32 | avg:    0.012 ms | max:    0.024 ms | max at:    548.489861 s
+  kworker/3:0:2683      |      0.015 ms |        1 | avg:    0.011 ms | max:    0.011 ms | max at:    548.791527 s
+  a.out:2872            |   1292.413 ms |        3 | avg:    0.010 ms | max:    0.021 ms | max at:    548.428858 s
+  nautilus:2211         |     24.894 ms |       17 | avg:    0.009 ms | max:    0.022 ms | max at:    548.426913 s
+  kworker/0:0:4         |      0.011 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:    548.827545 s
+  kworker/2:1:2684      |      0.021 ms |        2 | avg:    0.009 ms | max:    0.009 ms | max at:    548.803545 s
+  kworker/u8:5:162      |      0.366 ms |       24 | avg:    0.008 ms | max:    0.013 ms | max at:    548.429258 s
+  bamfdaemon:2019       |      0.406 ms |       12 | avg:    0.008 ms | max:    0.030 ms | max at:    548.429714 s
+  gnome-terminal-:2638  |      0.591 ms |        6 | avg:    0.006 ms | max:    0.007 ms | max at:    548.744586 s
+  Xorg:(2)              |      4.638 ms |       75 | avg:    0.006 ms | max:    0.074 ms | max at:    548.440247 s
+  memcached:1358        |      0.018 ms |        1 | avg:    0.004 ms | max:    0.004 ms | max at:    548.723712 s
+  gpg-agent:1989        |      0.018 ms |        1 | avg:    0.004 ms | max:    0.004 ms | max at:    549.693583 s
+  ksoftirqd/0:3         |      0.015 ms |        1 | avg:    0.004 ms | max:    0.004 ms | max at:    548.435565 s
+  kworker/1:2:93        |      0.008 ms |        1 | avg:    0.003 ms | max:    0.003 ms | max at:    548.815515 s
+  migration/3:22        |      0.000 ms |        1 | avg:    0.002 ms | max:    0.002 ms | max at:    548.419709 s
+ -----------------------------------------------------------------------------------------------------------------
+  TOTAL:                |   1329.819 ms |      249 |
+ ---------------------------------------------------
+
