@@ -2,28 +2,36 @@
  -----------------------------------------------------------------------------------------------------------------
   Task                  |   Runtime ms  | Switches | Average delay ms | Maximum delay ms | Maximum delay at       |
  -----------------------------------------------------------------------------------------------------------------
-  perf:(4)              |     12.345 ms |        5 | avg:    6.917 ms | max:   21.011 ms | max at:   1082.711262 s
-  a.out:(4)             |   5877.621 ms |      107 | avg:    0.019 ms | max:    0.142 ms | max at:   1082.975427 s
-  mysqld:(16)           |      0.664 ms |       39 | avg:    0.015 ms | max:    0.033 ms | max at:   1083.138727 s
-  ksoftirqd/3:23        |      0.051 ms |        2 | avg:    0.014 ms | max:    0.021 ms | max at:   1082.691290 s
-  ksoftirqd/2:18        |      0.067 ms |        2 | avg:    0.014 ms | max:    0.017 ms | max at:   1082.699291 s
-  ksoftirqd/1:13        |      0.080 ms |        2 | avg:    0.012 ms | max:    0.017 ms | max at:   1082.707282 s
-  kworker/u8:6:163      |      0.516 ms |       26 | avg:    0.011 ms | max:    0.013 ms | max at:   1083.595333 s
-  rcu_sched:7           |      0.339 ms |       24 | avg:    0.010 ms | max:    0.025 ms | max at:   1082.699282 s
-  thermald:1240         |      0.148 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:   1082.975286 s
-  watchdog/1:11         |      0.000 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:   1084.151358 s
-  watchdog/0:10         |      0.000 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:   1084.151357 s
-  gmain:2496            |      0.038 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:   1083.587325 s
-  watchdog/2:16         |      0.000 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:   1084.151357 s
-  watchdog/3:21         |      0.000 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:   1084.155356 s
-  ksoftirqd/0:3         |      0.024 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:   1082.707285 s
-  kworker/2:1:4284      |      0.035 ms |        2 | avg:    0.009 ms | max:    0.009 ms | max at:   1083.855343 s
-  memcached:1331        |      0.050 ms |        2 | avg:    0.008 ms | max:    0.009 ms | max at:   1082.835275 s
-  kworker/1:0:2829      |      0.051 ms |        2 | avg:    0.008 ms | max:    0.008 ms | max at:   1082.867278 s
-  wpa_supplicant:1386   |      0.035 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:   1083.399313 s
-  kworker/0:2:259       |      0.033 ms |        2 | avg:    0.008 ms | max:    0.008 ms | max at:   1083.879344 s
-  kworker/3:2:150       |      0.031 ms |        2 | avg:    0.008 ms | max:    0.008 ms | max at:   1083.843341 s
+  perf:(3)              |     69.527 ms |       11 | avg:    1.442 ms | max:   11.591 ms | max at:   2335.969121 s
+  a.out:(4)             |   4293.781 ms |      284 | avg:    0.252 ms | max:   16.025 ms | max at:   2335.929100 s
+  pool:(10)             |      0.813 ms |       16 | avg:    0.044 ms | max:    0.257 ms | max at:   2336.269146 s
+  nautilus:2387         |     69.788 ms |       19 | avg:    0.031 ms | max:    0.206 ms | max at:   2335.940766 s
+  ksoftirqd/1:13        |      0.138 ms |        7 | avg:    0.019 ms | max:    0.025 ms | max at:   2335.945100 s
+  gnome-settings-:2218  |      0.110 ms |        2 | avg:    0.018 ms | max:    0.018 ms | max at:   2335.940609 s
+  watchdog/3:21         |      0.000 ms |        1 | avg:    0.018 ms | max:    0.018 ms | max at:   2336.201093 s
+  rcu_sched:7           |      0.754 ms |       49 | avg:    0.012 ms | max:    0.072 ms | max at:   2336.269164 s
+  kworker/1:0:4784      |      0.026 ms |        2 | avg:    0.012 ms | max:    0.013 ms | max at:   2336.913139 s
+  kworker/u8:0:6353     |      0.356 ms |       17 | avg:    0.012 ms | max:    0.017 ms | max at:   2336.329111 s
+  memcached:1332        |      0.029 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:   2336.403112 s
+  kworker/2:2:4583      |      0.018 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:   2336.901135 s
+  ksoftirqd/2:18        |      0.034 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:   2335.925100 s
+  ksoftirqd/3:23        |      0.051 ms |        2 | avg:    0.009 ms | max:    0.009 ms | max at:   2335.929081 s
+  iprt-VBoxTscThr:1484  |      0.018 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:   2336.005079 s
+  thermald:1194         |      0.164 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:   2336.317098 s
+  kworker/3:1H:196      |      0.016 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:   2336.909135 s
+  watchdog/1:11         |      0.000 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:   2336.197084 s
+  mysqld:(17)           |      0.538 ms |       28 | avg:    0.008 ms | max:    0.009 ms | max at:   2336.064333 s
+  watchdog/2:16         |      0.000 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:   2336.197084 s
+  watchdog/0:10         |      0.000 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:   2336.197084 s
+  Xorg:1348             |      0.344 ms |        6 | avg:    0.008 ms | max:    0.010 ms | max at:   2335.940262 s
+  kworker/0:2:5296      |      0.034 ms |        2 | avg:    0.008 ms | max:    0.008 ms | max at:   2335.925079 s
+  kworker/3:2:172       |      0.018 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:   2336.889133 s
+  ksoftirqd/0:3         |      0.034 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:   2335.929097 s
+  kworker/2:1H:179      |      0.015 ms |        1 | avg:    0.007 ms | max:    0.007 ms | max at:   2335.917076 s
+  gmain:(3)             |      6.153 ms |      207 | avg:    0.005 ms | max:    0.066 ms | max at:   2335.912998 s
+  migration/0:9         |      0.000 ms |        1 | avg:    0.005 ms | max:    0.005 ms | max at:   2335.917818 s
+  migration/3:22        |      0.000 ms |        1 | avg:    0.003 ms | max:    0.003 ms | max at:   2335.913129 s
  -----------------------------------------------------------------------------------------------------------------
-  TOTAL:                |   5892.129 ms |      225 |
+  TOTAL:                |   4442.757 ms |      667 |
  ---------------------------------------------------
 

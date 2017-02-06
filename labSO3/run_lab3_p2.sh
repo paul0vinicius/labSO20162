@@ -5,9 +5,9 @@ do
 	for i in `seq 1 $1`
 	do
 		if [ "$i" -eq "$1" ]; then
-			perf sched record -o "perf.data.$i$j" ./a.out
+			perf sched record -o "perf.data.$i$j" ./a.out >> "time_process.$i$j.txt"
 		else 
-			perf sched record -o "perf.data.$i$j" ./a.out &
+			perf sched record -o "perf.data.$i$j" ./a.out >> "time_process.$i$j.txt" &
 		fi
 	done
 	
