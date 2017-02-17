@@ -1,0 +1,39 @@
+
+ -----------------------------------------------------------------------------------------------------------------
+  Task                  |   Runtime ms  | Switches | Average delay ms | Maximum delay ms | Maximum delay at       |
+ -----------------------------------------------------------------------------------------------------------------
+  upstart-dbus-br:1562  |      0.335 ms |        5 | avg:    0.480 ms | max:    0.735 ms | max at:   4839.228496 s
+  gdbus:(3)             |      2.549 ms |       16 | avg:    0.231 ms | max:    1.236 ms | max at:   4839.214723 s
+  compiz:1837           |      0.043 ms |        3 | avg:    0.173 ms | max:    0.338 ms | max at:   4839.217373 s
+  unity-panel-ser:1647  |      1.904 ms |        5 | avg:    0.092 ms | max:    0.179 ms | max at:   4839.228394 s
+  hud-service:1699      |      4.565 ms |        4 | avg:    0.066 ms | max:    0.110 ms | max at:   4839.213623 s
+  Xorg:950              |      1.486 ms |        9 | avg:    0.040 ms | max:    0.290 ms | max at:   4839.212912 s
+  thermald:870          |      0.135 ms |        1 | avg:    0.024 ms | max:    0.024 ms | max at:   4840.019561 s
+  dbus-daemon:1522      |      0.720 ms |        5 | avg:    0.018 ms | max:    0.067 ms | max at:   4839.227660 s
+  Watchdog:10117        |      0.107 ms |        3 | avg:    0.016 ms | max:    0.022 ms | max at:   4839.575830 s
+  watchdog/0:10         |      0.000 ms |        1 | avg:    0.015 ms | max:    0.015 ms | max at:   4840.111551 s
+  watchdog/2:16         |      0.000 ms |        1 | avg:    0.014 ms | max:    0.014 ms | max at:   4840.111551 s
+  nautilus:1809         |     55.915 ms |       14 | avg:    0.013 ms | max:    0.072 ms | max at:   4839.213592 s
+  rcu_sched:7           |      0.320 ms |       33 | avg:    0.012 ms | max:    0.031 ms | max at:   4839.591569 s
+  watchdog/1:11         |      0.000 ms |        1 | avg:    0.011 ms | max:    0.011 ms | max at:   4840.111567 s
+  kworker/3:2:10299     |      0.014 ms |        1 | avg:    0.011 ms | max:    0.011 ms | max at:   4839.803574 s
+  kworker/1:0:10284     |      0.012 ms |        1 | avg:    0.010 ms | max:    0.010 ms | max at:   4839.827573 s
+  kworker/2:1:10604     |      0.020 ms |        2 | avg:    0.008 ms | max:    0.008 ms | max at:   4839.815549 s
+  kworker/u8:3:7562     |      0.386 ms |       22 | avg:    0.008 ms | max:    0.015 ms | max at:   4839.191565 s
+  chrome:(3)            |      0.384 ms |        6 | avg:    0.007 ms | max:    0.024 ms | max at:   4839.252336 s
+  gmain:(3)             |      0.195 ms |        5 | avg:    0.007 ms | max:    0.022 ms | max at:   4839.803560 s
+  Chrome_IOThread:10077 |      0.086 ms |        4 | avg:    0.006 ms | max:    0.015 ms | max at:   4839.252329 s
+  a.out:10877           |    998.291 ms |        3 | avg:    0.005 ms | max:    0.007 ms | max at:   4839.148421 s
+  bamfdaemon:1633       |      0.108 ms |        2 | avg:    0.005 ms | max:    0.006 ms | max at:   4839.217033 s
+  kworker/u8:0:10694    |      0.028 ms |        1 | avg:    0.005 ms | max:    0.005 ms | max at:   4839.807615 s
+  pool:(3)              |      0.137 ms |        3 | avg:    0.005 ms | max:    0.006 ms | max at:   4839.573671 s
+  watchdog/3:21         |      0.000 ms |        1 | avg:    0.005 ms | max:    0.005 ms | max at:   4840.115560 s
+  Chrome_SyncThre:10244 |      0.047 ms |        1 | avg:    0.005 ms | max:    0.005 ms | max at:   4839.873654 s
+  kworker/0:2:7279      |      0.009 ms |        1 | avg:    0.004 ms | max:    0.004 ms | max at:   4839.839542 s
+  perf:10874            |      0.916 ms |        1 | avg:    0.004 ms | max:    0.004 ms | max at:   4840.146724 s
+  kworker/u8:1:10525    |      0.006 ms |        1 | avg:    0.004 ms | max:    0.004 ms | max at:   4839.807629 s
+  migration/1:12        |      0.000 ms |        1 | avg:    0.002 ms | max:    0.002 ms | max at:   4839.148502 s
+ -----------------------------------------------------------------------------------------------------------------
+  TOTAL:                |   1068.720 ms |      157 |
+ ---------------------------------------------------
+

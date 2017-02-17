@@ -1,0 +1,31 @@
+
+ -----------------------------------------------------------------------------------------------------------------
+  Task                  |   Runtime ms  | Switches | Average delay ms | Maximum delay ms | Maximum delay at       |
+ -----------------------------------------------------------------------------------------------------------------
+  perf:(4)              |    165.318 ms |       18 | avg:    0.109 ms | max:    1.738 ms | max at:   5200.142620 s
+  a.out:(4)             |   4314.622 ms |      109 | avg:    0.081 ms | max:    3.743 ms | max at:   5200.110627 s
+  watchdog/1:11         |      0.000 ms |        1 | avg:    0.020 ms | max:    0.020 ms | max at:   5200.110601 s
+  watchdog/2:16         |      0.000 ms |        1 | avg:    0.020 ms | max:    0.020 ms | max at:   5200.110601 s
+  ksoftirqd/3:23        |      0.054 ms |        3 | avg:    0.017 ms | max:    0.017 ms | max at:   5199.078609 s
+  Watchdog:10117        |      0.099 ms |        3 | avg:    0.014 ms | max:    0.026 ms | max at:   5199.590064 s
+  kworker/u8:3:7562     |      0.484 ms |       20 | avg:    0.012 ms | max:    0.031 ms | max at:   5199.818686 s
+  watchdog/0:10         |      0.000 ms |        1 | avg:    0.011 ms | max:    0.011 ms | max at:   5200.110592 s
+  watchdog/3:21         |      0.000 ms |        1 | avg:    0.010 ms | max:    0.010 ms | max at:   5200.114589 s
+  chrome:(3)            |      0.522 ms |        7 | avg:    0.010 ms | max:    0.018 ms | max at:   5199.590012 s
+  kworker/0:2:7279      |      0.020 ms |        1 | avg:    0.010 ms | max:    0.010 ms | max at:   5199.838596 s
+  pool:(3)              |      0.169 ms |        3 | avg:    0.009 ms | max:    0.011 ms | max at:   5199.222892 s
+  rcu_sched:7           |      0.884 ms |       63 | avg:    0.009 ms | max:    0.024 ms | max at:   5199.062611 s
+  Chrome_IOThread:10077 |      0.245 ms |        3 | avg:    0.009 ms | max:    0.009 ms | max at:   5199.729425 s
+  kworker/2:1:10604     |      0.018 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:   5199.814594 s
+  kworker/3:2:10299     |      0.018 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:   5199.802595 s
+  nautilus:1809         |      0.440 ms |        9 | avg:    0.008 ms | max:    0.009 ms | max at:   5200.106841 s
+  Chrome_SyncThre:10244 |      0.062 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:   5199.878701 s
+  gpg-agent:1618        |      0.026 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:   5199.278594 s
+  kworker/1:0:10284     |      0.016 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:   5199.826594 s
+  gmain:(3)             |      2.416 ms |       13 | avg:    0.008 ms | max:    0.009 ms | max at:   5199.170597 s
+  migration/0:9         |      0.000 ms |        1 | avg:    0.006 ms | max:    0.006 ms | max at:   5199.142599 s
+  migration/3:22        |      0.000 ms |        1 | avg:    0.006 ms | max:    0.006 ms | max at:   5199.061947 s
+ -----------------------------------------------------------------------------------------------------------------
+  TOTAL:                |   4485.416 ms |      263 |
+ ---------------------------------------------------
+

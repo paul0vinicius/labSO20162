@@ -1,0 +1,37 @@
+
+ -----------------------------------------------------------------------------------------------------------------
+  Task                  |   Runtime ms  | Switches | Average delay ms | Maximum delay ms | Maximum delay at       |
+ -----------------------------------------------------------------------------------------------------------------
+  a.out:(3)             |   3191.755 ms |       56 | avg:    0.695 ms | max:   12.001 ms | max at:   5200.850593 s
+  gdbus:(3)             |      2.174 ms |        9 | avg:    0.464 ms | max:    1.178 ms | max at:   5200.857612 s
+  upstart-dbus-br:1562  |      0.289 ms |        3 | avg:    0.395 ms | max:    1.006 ms | max at:   5200.857520 s
+  perf:(4)              |    286.347 ms |       33 | avg:    0.359 ms | max:   10.496 ms | max at:   5200.758601 s
+  nautilus:1809         |     30.583 ms |       17 | avg:    0.276 ms | max:    4.000 ms | max at:   5200.838602 s
+  :11544:11544          |   1004.884 ms |       20 | avg:    0.269 ms | max:    2.339 ms | max at:   5200.862947 s
+  unity-panel-ser:1647  |      1.955 ms |        3 | avg:    0.173 ms | max:    0.242 ms | max at:   5200.861195 s
+  dbus-daemon:1522      |      0.621 ms |        3 | avg:    0.076 ms | max:    0.092 ms | max at:   5200.857738 s
+  kworker/u8:3:7562     |      0.547 ms |       20 | avg:    0.056 ms | max:    0.890 ms | max at:   5200.857592 s
+  rcu_sched:7           |      0.830 ms |       55 | avg:    0.042 ms | max:    1.403 ms | max at:   5200.859997 s
+  kworker/1:0:10284     |      0.024 ms |        2 | avg:    0.023 ms | max:    0.039 ms | max at:   5200.826637 s
+  kworker/2:1H:195      |      0.006 ms |        1 | avg:    0.020 ms | max:    0.020 ms | max at:   5201.830607 s
+  ksoftirqd/1:13        |      0.024 ms |        2 | avg:    0.017 ms | max:    0.017 ms | max at:   5200.782620 s
+  rtkit-daemon:(2)      |      0.032 ms |        3 | avg:    0.016 ms | max:    0.025 ms | max at:   5200.826649 s
+  ksoftirqd/3:23        |      0.035 ms |        3 | avg:    0.015 ms | max:    0.016 ms | max at:   5200.750611 s
+  kworker/0:2:7279      |      0.051 ms |        2 | avg:    0.015 ms | max:    0.018 ms | max at:   5201.838602 s
+  kworker/2:1:10604     |      0.030 ms |        2 | avg:    0.014 ms | max:    0.018 ms | max at:   5201.814606 s
+  ksoftirqd/2:18        |      0.013 ms |        1 | avg:    0.014 ms | max:    0.014 ms | max at:   5201.762611 s
+  Xorg:950              |      0.596 ms |        4 | avg:    0.012 ms | max:    0.015 ms | max at:   5200.858066 s
+  kworker/3:2:10299     |      0.027 ms |        2 | avg:    0.012 ms | max:    0.017 ms | max at:   5200.802607 s
+  compiz:1837           |      0.029 ms |        1 | avg:    0.010 ms | max:    0.010 ms | max at:   5200.856693 s
+  hud-service:1699      |      5.209 ms |        3 | avg:    0.010 ms | max:    0.010 ms | max at:   5200.856741 s
+  chrome:10042          |      0.152 ms |        2 | avg:    0.009 ms | max:    0.009 ms | max at:   5201.134593 s
+  gmain:(2)             |      1.197 ms |       18 | avg:    0.009 ms | max:    0.018 ms | max at:   5200.765139 s
+  pool:11516            |      0.023 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:   5201.223907 s
+  irqbalance:973        |      0.273 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:   5201.630090 s
+  gpg-agent:1618        |      0.027 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:   5201.280619 s
+  AudioThread:10080     |      0.036 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:   5201.714690 s
+  migration/1:12        |      0.000 ms |        1 | avg:    0.006 ms | max:    0.006 ms | max at:   5200.781036 s
+ -----------------------------------------------------------------------------------------------------------------
+  TOTAL:                |   4527.769 ms |      270 |
+ ---------------------------------------------------
+
