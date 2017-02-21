@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for j in `seq 1 15`
+for j in `seq 1 $2`
 do
 	for i in `seq 1 $1`
 	do

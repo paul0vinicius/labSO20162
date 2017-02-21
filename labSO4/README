@@ -1,0 +1,4 @@
+Instruções de execução:
+Para rodar os três modos basta executar o comando 'sudo make run_all'. O makefile está configurado pressupondo que o script irá rodar em um computador de 4 processadores. Para alterar esses parâmetros basta visitar o makefile.
+
+Cada modo irá ser executado 15 vezes para cada conjunto de instâncias. Os resultados ficam armazenados em suas pastas, separadamente. Para alterar o número de execuções basta visitar o makefile.
