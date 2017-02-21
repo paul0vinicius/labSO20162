@@ -1,0 +1,7 @@
+library(ggplot2)
+p<-read.table("data_plot.txt",header=T,sep="|")
+str(p)
+qplot(data=p,x=N.Of.Processes,y=Runtime.ms,geom="boxplot") + scale_y_continuous(lim = c(0, 10000), breaks = seq(0, 10000, 1000))
+qplot(data=p,x=N.Of.Processes,y=Switches,geom="boxplot") + scale_y_continuous(lim = c(0, 1000), breaks = seq(0, 1000, 100))
+qplot(data=p,x=N.Of.Processes,y=Average.delay.ms,geom="boxplot") + scale_y_continuous(lim = c(0, 15), breaks = seq(0, 15, 5))
+qplot(data=p,x=N.Of.Processes,y=Time,geom="boxplot") + scale_y_continuous(lim = c(0, 3000), breaks = seq(0, 3000, 500))

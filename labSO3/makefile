@@ -3,7 +3,7 @@ run_all: clean compile
 	./run_lab3_p2.sh 4 15
 	./run_lab3_p2.sh 8 15
 	./scripts/concatena_tudo.sh
-	Rscript plot.R
+	./plot_lab3_p2.sh
 
 compile:
 	gcc cpu_burn.c
