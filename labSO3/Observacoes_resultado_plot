@@ -1,0 +1,11 @@
+Runtime.ms
+Os tempos demonstrados nesse boxplot apresentam grande discrepância com relação ao esperado. O erro se deve à algum problema na utilização da ferramenta, mas tal erro não foi identificado. Os demais boxplots estão dentro do esperado. O perf pode requerer alguns detalhes adicionais para executar de forma correta programas em paralelo. Ao que parece, o tempo está sendo medido para execuções em um único processador e não para todos os processadores. 
+O esperado seria para a coluna '1p' e '4p', os tempos dos processos durarem, em média, 1 segundo; e os da coluna '8p' durarem, em média, 2 segundos.
+
+Switches
+O boxplot Switches indica quantas trocas de contexto ocorrem dentro da execução dos programas. Podemos ver que poucas trocas ocorrem nas colunas '1p' e '4p', mas na coluna '8p' existe um aumento na troca de contextos por dobrarem o número de processos em execução nas CPUs.
+
+Average Delay
+
+Time
+O boxplot 'time' indica qual o tempo de execução de cada programa, de forma que na compilação já existe um 'timer' contando desde o início da execução até o fim da execução do programa, o tempo real. Os tempos reais de execução estão conforme previstos. Ao existirem múltiplos processos rodando em paralelo, cada processo é direcionado para uma processador a fim de tornar mais rápida a execução. Ao existir apenas 1 processo, o tempo de execução é de 1 segundo. Ao existir uma quantidade de processos igual ao número de processadores, o tempo de execução ainda é 1 segundo. Ao dobrar esse número de processos, o tempo real de execução também dobra.

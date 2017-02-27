@@ -1,0 +1,56 @@
+
+ -----------------------------------------------------------------------------------------------------------------
+  Task                  |   Runtime ms  | Switches | Average delay ms | Maximum delay ms | Maximum delay at       |
+ -----------------------------------------------------------------------------------------------------------------
+  a.out:(8)             |   8183.240 ms |      829 | avg:   10.270 ms | max:   55.157 ms | max at:   1635.769289 s
+  uname:(8)             |      6.215 ms |        9 | avg:    8.301 ms | max:   12.742 ms | max at:   1636.721334 s
+  basename:(8)          |      6.667 ms |       12 | avg:    8.292 ms | max:   21.895 ms | max at:   1636.729624 s
+  seq:8146              |      1.053 ms |        2 | avg:    6.272 ms | max:   12.532 ms | max at:   1636.692236 s
+  perf:(22)             |   1976.485 ms |      619 | avg:    4.741 ms | max:   55.995 ms | max at:   1636.905358 s
+  pool:(6)              |      4.270 ms |       79 | avg:    0.425 ms | max:   19.385 ms | max at:   1636.773340 s
+  nautilus:1639         |    212.990 ms |      239 | avg:    0.359 ms | max:    5.294 ms | max at:   1636.673331 s
+  upstart-dbus-br:1405  |      1.914 ms |       34 | avg:    0.196 ms | max:    0.977 ms | max at:   1636.538850 s
+  gedit:4505            |     21.873 ms |       54 | avg:    0.154 ms | max:    4.026 ms | max at:   1636.781371 s
+  gnome-terminal-:2004  |     14.102 ms |       61 | avg:    0.139 ms | max:    7.561 ms | max at:   1636.521320 s
+  unity-settings-:1502  |      0.474 ms |        8 | avg:    0.127 ms | max:    0.722 ms | max at:   1635.806591 s
+  hud-service:1500      |     19.437 ms |       22 | avg:    0.122 ms | max:    0.508 ms | max at:   1634.337276 s
+  dbus-daemon:1368      |      5.216 ms |       40 | avg:    0.105 ms | max:    1.008 ms | max at:   1636.668794 s
+  gdbus:(9)             |     19.676 ms |      310 | avg:    0.078 ms | max:    4.667 ms | max at:   1634.341123 s
+  kworker/u8:1:4646     |      0.342 ms |       11 | avg:    0.077 ms | max:    0.231 ms | max at:   1634.629650 s
+  kworker/3:0:2455      |      0.699 ms |       21 | avg:    0.055 ms | max:    0.154 ms | max at:   1636.353221 s
+  thermald:909          |      0.183 ms |        1 | avg:    0.052 ms | max:    0.052 ms | max at:   1636.721385 s
+  kworker/0:1:4543      |      0.177 ms |        6 | avg:    0.050 ms | max:    0.143 ms | max at:   1636.292008 s
+  kworker/2:1:149       |      0.505 ms |       20 | avg:    0.050 ms | max:    0.264 ms | max at:   1636.921424 s
+  evince:4567           |      0.044 ms |        1 | avg:    0.046 ms | max:    0.046 ms | max at:   1636.625643 s
+  unity-panel-ser:1515  |      9.525 ms |       57 | avg:    0.044 ms | max:    0.369 ms | max at:   1635.808378 s
+  kworker/2:2:6836      |      0.015 ms |        1 | avg:    0.044 ms | max:    0.044 ms | max at:   1636.921497 s
+  kworker/1:0:4647      |      0.205 ms |        8 | avg:    0.039 ms | max:    0.097 ms | max at:   1636.444464 s
+  ksoftirqd/3:23        |      0.453 ms |       10 | avg:    0.034 ms | max:    0.249 ms | max at:   1636.869619 s
+  rcu_sched:7           |      4.442 ms |      233 | avg:    0.033 ms | max:    2.052 ms | max at:   1636.679396 s
+  compiz:1714           |     25.715 ms |      171 | avg:    0.028 ms | max:    0.772 ms | max at:   1636.547396 s
+  gmain:(4)             |      7.665 ms |      650 | avg:    0.023 ms | max:    3.831 ms | max at:   1636.881363 s
+  indicator-datet:1535  |      1.029 ms |       15 | avg:    0.022 ms | max:    0.053 ms | max at:   1635.544666 s
+  ksoftirqd/1:13        |      1.609 ms |       21 | avg:    0.020 ms | max:    0.190 ms | max at:   1636.721538 s
+  kworker/u8:0:6738     |      0.763 ms |       36 | avg:    0.019 ms | max:    0.105 ms | max at:   1636.036255 s
+  ksoftirqd/2:18        |      0.574 ms |       12 | avg:    0.018 ms | max:    0.046 ms | max at:   1636.921455 s
+  nm-applet:1644        |      0.170 ms |        1 | avg:    0.017 ms | max:    0.017 ms | max at:   1634.641162 s
+  Xorg:1009             |     16.663 ms |      136 | avg:    0.015 ms | max:    0.124 ms | max at:   1636.546584 s
+  kworker/3:1H:276      |      0.026 ms |        1 | avg:    0.015 ms | max:    0.015 ms | max at:   1634.941188 s
+  rtkit-daemon:(2)      |      0.049 ms |        3 | avg:    0.015 ms | max:    0.017 ms | max at:   1635.473243 s
+  watchdog/0:10         |      0.000 ms |        1 | avg:    0.014 ms | max:    0.014 ms | max at:   1636.245297 s
+  watchdog/2:16         |      0.000 ms |        1 | avg:    0.013 ms | max:    0.013 ms | max at:   1636.245297 s
+  watchdog/1:11         |      0.000 ms |        1 | avg:    0.013 ms | max:    0.013 ms | max at:   1636.245297 s
+  ksoftirqd/0:3         |      1.790 ms |       14 | avg:    0.013 ms | max:    0.026 ms | max at:   1636.949387 s
+  watchdog/3:21         |      0.000 ms |        1 | avg:    0.013 ms | max:    0.013 ms | max at:   1636.249295 s
+  gpg-agent:1476        |      0.074 ms |        2 | avg:    0.013 ms | max:    0.017 ms | max at:   1634.885185 s
+  ibus-ui-gtk3:1451     |      0.341 ms |        5 | avg:    0.008 ms | max:    0.011 ms | max at:   1636.426230 s
+  execute_perf.sh:7762  |      1.582 ms |        6 | avg:    0.006 ms | max:    0.018 ms | max at:   1636.693344 s
+  migration/0:9         |      0.000 ms |        4 | avg:    0.004 ms | max:    0.004 ms | max at:   1636.729613 s
+  ibus-engine-sim:1477  |      0.239 ms |       15 | avg:    0.003 ms | max:    0.007 ms | max at:   1636.288720 s
+  ibus-daemon:1410      |      1.221 ms |       45 | avg:    0.003 ms | max:    0.008 ms | max at:   1636.288181 s
+  migration/3:22        |      0.000 ms |        5 | avg:    0.003 ms | max:    0.004 ms | max at:   1636.709568 s
+  migration/1:12        |      0.000 ms |        8 | avg:    0.003 ms | max:    0.003 ms | max at:   1636.705640 s
+ -----------------------------------------------------------------------------------------------------------------
+  TOTAL:                |  10549.709 ms |     3841 |
+ ---------------------------------------------------
+

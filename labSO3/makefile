@@ -9,4 +9,4 @@ compile:
 	gcc cpu_burn.c
 
 clean:
-	rm -rf execucao_* a.out data_plot.txt result*.txt *.pdf
+	rm -rf execucao_* a.out data_plot.txt result*.txt *.pdf time* perf.data*
