@@ -2,21 +2,21 @@
 #include <stdio.h>
 #include <sys/time.h>
 #include <pthread.h>
+#include <sched.h>
 
-int main(int sched) {
+
+int main(int policy) {
 	struct timeval inicio, fim;
 	long int tempo = 375839000;
 	int tmili;
 
 	struct sched_param param;
 	param.sched_priority = 99;
-
-	if (sched == 1)
-		sched_setscheduler(0, SCHED_FIFO, &param);
-	else if (sched == 2)
-		sched_setscheduler(0, SCHED_RR, &param);
-	else
-		sched_setscheduler(0, SCHED_OTHER, &param);
+	
+	if (policy == 1)
+		sched_setscheduler(getpid(), SCHED_FIFO, & param);
+	else if (policy == 2)
+		sched_setscheduler(getpid(), SCHED_RR, & param);
 	
 	gettimeofday(&inicio, NULL);
 	

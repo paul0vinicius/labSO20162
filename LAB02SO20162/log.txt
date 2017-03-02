@@ -1,4 +1,12 @@
 index || programa_e_args || pid || uid || gid || start_epoch || end_epoch || return_value
-ps xau | grap root || 15922 || 1000 || 15921 || 1485744463 || 1485744463 || 
-ps xau | grep root || 15928 || 1000 || 15921 || 1485744474 || 1485744474 || 
-date || 15931 || 1000 || 15921 || 1485744485 || 1485744485 || Dom Jan 29 23:48:05 BRT 2017
+ls || 31364 || 1000 || 31359 || 1488421314 || 1488421314 || a.out
+exemploPipe.c
+log.txt
+out.txt
+pipe.c
+pipeLinux.c
+xeu_parte12_hugoG_pauloV.c
+xeu_parte3_hugoG_pauloV.c
+xeu_parte4_hugoG_pauloV.c
+
+ls | grep r || 31391 || 1000 || 31359 || 1488421327 || 1488421327 || 
