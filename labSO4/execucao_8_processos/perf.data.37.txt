@@ -1,0 +1,44 @@
+
+ -----------------------------------------------------------------------------------------------------------------
+  Task                  |   Runtime ms  | Switches | Average delay ms | Maximum delay ms | Maximum delay at       |
+ -----------------------------------------------------------------------------------------------------------------
+  ksoftirqd/3:23        |      0.010 ms |        1 | avg:  964.600 ms | max:  964.600 ms | max at:  10454.564533 s
+  kworker/0:6:24563     |      0.015 ms |        1 | avg:  545.044 ms | max:  545.044 ms | max at:  10453.804943 s
+  kworker/2:1:23514     |      0.013 ms |        1 | avg:  353.887 ms | max:  353.887 ms | max at:  10453.589785 s
+  kworker/3:0:23293     |      0.060 ms |        2 | avg:  281.134 ms | max:  340.592 ms | max at:  10454.564542 s
+  rtkit-daemon:(2)      |      0.054 ms |        3 | avg:  233.299 ms | max:  698.252 ms | max at:  10453.446130 s
+  nm-applet:1575        |      0.068 ms |        1 | avg:  208.066 ms | max:  208.066 ms | max at:  10453.807981 s
+  indicator-datet:1454  |      0.651 ms |        6 | avg:  135.728 ms | max:  721.709 ms | max at:  10453.445591 s
+  gpg-agent:1397        |      0.020 ms |        1 | avg:   91.818 ms | max:   91.818 ms | max at:  10453.589798 s
+  kworker/u8:2:23459    |      0.280 ms |       10 | avg:   85.372 ms | max:  458.435 ms | max at:  10453.589703 s
+  watchdog/3:21         |      0.000 ms |        1 | avg:   81.580 ms | max:   81.580 ms | max at:  10452.835878 s
+  kworker/1:2:18922     |      0.199 ms |        8 | avg:   71.000 ms | max:  567.469 ms | max at:  10453.815368 s
+  watchdog/2:16         |      0.000 ms |        1 | avg:   49.944 ms | max:   49.944 ms | max at:  10452.779876 s
+  ibus-daemon:1331      |      0.741 ms |        8 | avg:   46.639 ms | max:  371.637 ms | max at:  10454.244013 s
+  compiz:1633           |      6.315 ms |       24 | avg:   45.305 ms | max:  657.158 ms | max at:  10453.589638 s
+  unity-panel-ser:1436  |      0.777 ms |        8 | avg:   36.029 ms | max:  288.041 ms | max at:  10453.815828 s
+  gdbus:(7)             |      3.469 ms |       40 | avg:   23.007 ms | max:  430.519 ms | max at:  10454.246458 s
+  perf:(24)             |    809.583 ms |      235 | avg:   16.311 ms | max: 1122.472 ms | max at:  10453.827943 s
+  uname:(8)             |      6.674 ms |        8 | avg:   13.086 ms | max:   32.328 ms | max at:  10454.111949 s
+  Xorg:925              |     12.683 ms |      122 | avg:   12.108 ms | max:  748.885 ms | max at:  10453.446184 s
+  basename:(8)          |      7.072 ms |       16 | avg:   11.713 ms | max:   33.376 ms | max at:  10454.122447 s
+  kworker/u8:0:23207    |      0.221 ms |       11 | avg:    5.756 ms | max:   62.929 ms | max at:  10453.808050 s
+  a.out:(7)             |      2.955 ms |        7 | avg:    5.662 ms | max:   39.586 ms | max at:  10453.872506 s
+  gnome-terminal-:19519 |     10.598 ms |       64 | avg:    5.553 ms | max:  352.489 ms | max at:  10453.815655 s
+  rcu_sched:7           |      1.971 ms |      110 | avg:    4.999 ms | max:  370.519 ms | max at:  10454.246445 s
+  upstart-dbus-br:1326  |      0.153 ms |        2 | avg:    0.479 ms | max:    0.847 ms | max at:  10453.447711 s
+  dbus-daemon:1289      |      0.546 ms |        4 | avg:    0.220 ms | max:    0.665 ms | max at:  10453.446722 s
+  kworker/u8:69:19230   |      0.010 ms |        1 | avg:    0.110 ms | max:    0.110 ms | max at:  10454.246954 s
+  ibus-engine-sim:1398  |      0.083 ms |        3 | avg:    0.028 ms | max:    0.030 ms | max at:  10454.244633 s
+  ibus-ui-gtk3:1372     |      0.182 ms |        3 | avg:    0.026 ms | max:    0.027 ms | max at:  10454.244932 s
+  ksoftirqd/1:13        |      2.950 ms |       37 | avg:    0.023 ms | max:    0.147 ms | max at:  10454.300119 s
+  seq:24701             |      0.962 ms |        2 | avg:    0.023 ms | max:    0.032 ms | max at:  10454.064376 s
+  ksoftirqd/2:18        |      0.039 ms |        3 | avg:    0.022 ms | max:    0.032 ms | max at:  10453.619960 s
+  ksoftirqd/0:3         |      0.039 ms |        3 | avg:    0.016 ms | max:    0.020 ms | max at:  10453.855963 s
+  watchdog/1:11         |      0.000 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:  10452.705454 s
+  execute_perf.sh:24438 |      1.524 ms |        4 | avg:    0.008 ms | max:    0.011 ms | max at:  10454.064186 s
+  migration/3:22        |      0.000 ms |        1 | avg:    0.008 ms | max:    0.008 ms | max at:  10452.696828 s
+ -----------------------------------------------------------------------------------------------------------------
+  TOTAL:                |    870.916 ms |      753 |
+ ---------------------------------------------------
+

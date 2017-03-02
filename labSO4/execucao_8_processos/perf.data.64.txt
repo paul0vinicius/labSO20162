@@ -1,0 +1,26 @@
+
+ -----------------------------------------------------------------------------------------------------------------
+  Task                  |   Runtime ms  | Switches | Average delay ms | Maximum delay ms | Maximum delay at       |
+ -----------------------------------------------------------------------------------------------------------------
+  watchdog/1:11         |      0.000 ms |        1 | avg:   70.438 ms | max:   70.438 ms | max at:  10444.775557 s
+  watchdog/3:21         |      0.000 ms |        1 | avg:   61.581 ms | max:   61.581 ms | max at:  10444.815555 s
+  watchdog/0:10         |      0.000 ms |        1 | avg:   56.003 ms | max:   56.003 ms | max at:  10444.587544 s
+  avahi-daemon:715      |      0.135 ms |        2 | avg:   25.815 ms | max:   51.625 ms | max at:  10444.387609 s
+  kworker/u8:69:19230   |      0.125 ms |        5 | avg:   25.600 ms | max:  127.951 ms | max at:  10444.387598 s
+  watchdog/2:16         |      0.000 ms |        1 | avg:   13.945 ms | max:   13.945 ms | max at:  10444.743552 s
+  a.out:(4)             |      3.002 ms |        8 | avg:   10.151 ms | max:   81.164 ms | max at:  10444.387676 s
+  perf:(6)              |    332.239 ms |       31 | avg:    6.825 ms | max:  143.546 ms | max at:  10444.259565 s
+  rcu_sched:7           |      0.509 ms |       30 | avg:    3.632 ms | max:  108.341 ms | max at:  10444.255870 s
+  kworker/3:0:23293     |      0.013 ms |        1 | avg:    3.308 ms | max:    3.308 ms | max at:  10445.226883 s
+  ksoftirqd/0:3         |      0.727 ms |        7 | avg:    0.054 ms | max:    0.266 ms | max at:  10444.271819 s
+  thermald:847          |      0.254 ms |        1 | avg:    0.020 ms | max:    0.020 ms | max at:  10444.271561 s
+  gpg-agent:1397        |      0.033 ms |        1 | avg:    0.012 ms | max:    0.012 ms | max at:  10444.247553 s
+  execute_perf.sh:24438 |      0.080 ms |        1 | avg:    0.010 ms | max:    0.010 ms | max at:  10444.255802 s
+  migration/2:17        |      0.000 ms |        2 | avg:    0.007 ms | max:    0.009 ms | max at:  10444.139550 s
+  gnome-terminal-:19519 |      0.067 ms |        1 | avg:    0.004 ms | max:    0.004 ms | max at:  10444.134417 s
+  ksoftirqd/1:13        |      0.042 ms |        2 | avg:    0.003 ms | max:    0.004 ms | max at:  10444.131536 s
+  migration/1:12        |      0.000 ms |        1 | avg:    0.003 ms | max:    0.003 ms | max at:  10444.116008 s
+ -----------------------------------------------------------------------------------------------------------------
+  TOTAL:                |    337.228 ms |       97 |
+ ---------------------------------------------------
+

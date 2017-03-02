@@ -1,0 +1,87 @@
+
+ -----------------------------------------------------------------------------------------------------------------
+  Task                  |   Runtime ms  | Switches | Average delay ms | Maximum delay ms | Maximum delay at       |
+ -----------------------------------------------------------------------------------------------------------------
+  :23981:23981          |      0.093 ms |        1 | avg:  489.910 ms | max:  489.910 ms | max at:  10441.606755 s
+  :24557:24557          |      0.137 ms |        1 | avg:  338.332 ms | max:  338.332 ms | max at:  10441.606847 s
+  gmain:(3)             |      0.096 ms |        3 | avg:  181.233 ms | max:  273.947 ms | max at:  10441.725366 s
+  kworker/2:1:23514     |      0.175 ms |        7 | avg:  140.319 ms | max:  979.457 ms | max at:  10442.214866 s
+  avahi-daemon:715      |      0.392 ms |        4 | avg:  138.821 ms | max:  555.046 ms | max at:  10441.725290 s
+  NetworkManager:774    |      0.445 ms |        3 | avg:   91.467 ms | max:  273.962 ms | max at:  10441.725389 s
+  :24048:24048          |      0.020 ms |        1 | avg:   78.965 ms | max:   78.965 ms | max at:  10442.214945 s
+  :23946:23946          |      0.022 ms |        1 | avg:   78.946 ms | max:   78.946 ms | max at:  10442.214924 s
+  :23945:23945          |      0.039 ms |        1 | avg:   78.909 ms | max:   78.909 ms | max at:  10442.214885 s
+  ksoftirqd/2:18        |      0.372 ms |       10 | avg:   70.961 ms | max:  703.452 ms | max at:  10442.214879 s
+  Chrome_IOThread:23892 |      2.521 ms |        2 | avg:   57.952 ms | max:  115.835 ms | max at:  10441.722655 s
+  kworker/3:1H:268      |      0.275 ms |       19 | avg:   57.031 ms | max: 1083.113 ms | max at:  10441.928558 s
+  kworker/u8:0:23207    |      0.277 ms |        7 | avg:   41.045 ms | max:  276.768 ms | max at:  10441.116857 s
+  kworker/0:0:22055     |      0.205 ms |       10 | avg:   39.551 ms | max:  394.772 ms | max at:  10441.654185 s
+  jbd2/sda6-8:198       |      1.179 ms |       21 | avg:   27.946 ms | max:  585.283 ms | max at:  10441.720228 s
+  Chrome_DBThread:23887 |      2.482 ms |       22 | avg:   26.753 ms | max:  585.945 ms | max at:  10441.720928 s
+  :23943:23943          |      2.150 ms |       24 | avg:   24.629 ms | max:  586.265 ms | max at:  10441.721254 s
+  BrowserBlocking:(2)   |      3.972 ms |       34 | avg:   15.297 ms | max:  509.666 ms | max at:  10441.729685 s
+  kworker/u8:69:19230   |      4.038 ms |       45 | avg:   13.223 ms | max:  591.002 ms | max at:  10441.719935 s
+  perf:(13)             |   1564.658 ms |      481 | avg:   12.475 ms | max:  692.921 ms | max at:  10441.788340 s
+  wpa_supplicant:977    |      0.509 ms |        6 | avg:    9.839 ms | max:   58.985 ms | max at:  10441.784774 s
+  Chrome_FileUser:23889 |      0.532 ms |       10 | avg:    6.396 ms | max:   63.291 ms | max at:  10441.783542 s
+  indicator-datet:1454  |      0.664 ms |       10 | avg:    6.107 ms | max:   60.926 ms | max at:  10441.784364 s
+  rcu_sched:7           |      5.969 ms |      173 | avg:    3.873 ms | max:  660.124 ms | max at:  10441.783532 s
+  gnome-terminal-:19519 |     23.843 ms |      177 | avg:    3.339 ms | max:  574.838 ms | max at:  10441.725157 s
+  gdbus:(16)            |     17.517 ms |      127 | avg:    3.256 ms | max:  250.173 ms | max at:  10441.115525 s
+  Xorg:925              |     27.069 ms |      246 | avg:    2.495 ms | max:  590.602 ms | max at:  10441.719525 s
+  dconf worker:23873    |      0.476 ms |        2 | avg:    1.541 ms | max:    3.043 ms | max at:  10442.131460 s
+  fsnotify_mark:47      |      0.023 ms |        3 | avg:    1.101 ms | max:    3.296 ms | max at:  10442.131453 s
+  compiz:1633           |     26.989 ms |      107 | avg:    0.774 ms | max:   63.172 ms | max at:  10440.924051 s
+  IndexedDB:23893       |      0.254 ms |        3 | avg:    0.764 ms | max:    2.276 ms | max at:  10440.951426 s
+  upstart-dbus-br:(2)   |      0.347 ms |        6 | avg:    0.690 ms | max:    2.654 ms | max at:  10440.863105 s
+  :24556:24556          |      0.050 ms |        1 | avg:    0.441 ms | max:    0.441 ms | max at:  10442.128004 s
+  pulseaudio:1495       |      0.119 ms |        1 | avg:    0.322 ms | max:    0.322 ms | max at:  10442.127360 s
+  gconfd-2:5848         |      0.099 ms |        1 | avg:    0.270 ms | max:    0.270 ms | max at:  10442.223420 s
+  dbus-daemon:(2)       |      2.986 ms |       21 | avg:    0.251 ms | max:    1.707 ms | max at:  10442.127480 s
+  chrome:(2)            |      8.488 ms |       25 | avg:    0.242 ms | max:    4.050 ms | max at:  10441.729119 s
+  indicator-appli:1485  |      0.071 ms |        1 | avg:    0.200 ms | max:    0.200 ms | max at:  10442.223332 s
+  ibus-daemon:1331      |      2.446 ms |       18 | avg:    0.194 ms | max:    0.581 ms | max at:  10441.116582 s
+  thermald:782          |      0.063 ms |        1 | avg:    0.167 ms | max:    0.167 ms | max at:  10442.127886 s
+  cups-browsed:799      |      0.051 ms |        1 | avg:    0.125 ms | max:    0.125 ms | max at:  10442.127835 s
+  unity-settings-:1423  |      0.084 ms |        1 | avg:    0.107 ms | max:    0.107 ms | max at:  10442.127569 s
+  inotify_reader:23882  |      0.028 ms |        2 | avg:    0.085 ms | max:    0.087 ms | max at:  10442.136058 s
+  gvfsd-dnssd:1896      |      0.053 ms |        1 | avg:    0.083 ms | max:    0.083 ms | max at:  10442.127782 s
+  :24077:24077          |      0.014 ms |        1 | avg:    0.069 ms | max:    0.069 ms | max at:  10442.136059 s
+  unity-scope-hom:7066  |      0.230 ms |        2 | avg:    0.066 ms | max:    0.103 ms | max at:  10440.859803 s
+  :24076:24076          |      0.015 ms |        1 | avg:    0.057 ms | max:    0.057 ms | max at:  10442.136044 s
+  kworker/1:0:23264     |      0.398 ms |       18 | avg:    0.056 ms | max:    0.141 ms | max at:  10441.991572 s
+  :24475:24475          |      0.016 ms |        1 | avg:    0.046 ms | max:    0.046 ms | max at:  10442.136043 s
+  :24062:24062          |      0.019 ms |        1 | avg:    0.041 ms | max:    0.041 ms | max at:  10442.136025 s
+  :24474:24474          |      0.021 ms |        1 | avg:    0.032 ms | max:    0.032 ms | max at:  10442.136025 s
+  gnome-keyring-d:1199  |      0.030 ms |        1 | avg:    0.029 ms | max:    0.029 ms | max at:  10442.223754 s
+  gnome-session-b:1430  |      0.037 ms |        1 | avg:    0.028 ms | max:    0.028 ms | max at:  10442.223296 s
+  :23896:23896          |      0.154 ms |        3 | avg:    0.028 ms | max:    0.035 ms | max at:  10442.127175 s
+  zeitgeist-daemo:1759  |      0.032 ms |        1 | avg:    0.027 ms | max:    0.027 ms | max at:  10442.223138 s
+  dnsmasq:6185          |      0.118 ms |        1 | avg:    0.026 ms | max:    0.026 ms | max at:  10440.955480 s
+  ibus-engine-sim:1398  |      0.217 ms |        8 | avg:    0.025 ms | max:    0.031 ms | max at:  10441.120786 s
+  ibus-ui-gtk3:1372     |      0.369 ms |        8 | avg:    0.024 ms | max:    0.029 ms | max at:  10441.116490 s
+  polkitd:812           |      0.028 ms |        1 | avg:    0.023 ms | max:    0.023 ms | max at:  10442.127914 s
+  kworker/3:0:23293     |      0.038 ms |        2 | avg:    0.019 ms | max:    0.026 ms | max at:  10442.112191 s
+  ksoftirqd/3:23        |      0.141 ms |        5 | avg:    0.018 ms | max:    0.041 ms | max at:  10442.119494 s
+  unity-panel-ser:1436  |      0.940 ms |       17 | avg:    0.018 ms | max:    0.038 ms | max at:  10441.866025 s
+  ksoftirqd/0:3         |      0.980 ms |       12 | avg:    0.014 ms | max:    0.033 ms | max at:  10441.888042 s
+  :23895:23895          |      0.403 ms |        3 | avg:    0.012 ms | max:    0.023 ms | max at:  10442.127280 s
+  ksoftirqd/1:13        |      1.539 ms |        7 | avg:    0.009 ms | max:    0.024 ms | max at:  10441.967511 s
+  a.out:24543           |      0.854 ms |        1 | avg:    0.009 ms | max:    0.009 ms | max at:  10440.837775 s
+  D-Bus thread:23880    |      0.505 ms |        6 | avg:    0.008 ms | max:    0.011 ms | max at:  10442.125220 s
+  migration/2:17        |      0.000 ms |        1 | avg:    0.007 ms | max:    0.007 ms | max at:  10440.837866 s
+  zeitgeist-fts:1769    |      0.041 ms |        1 | avg:    0.006 ms | max:    0.006 ms | max at:  10442.223118 s
+  NetworkChangeNo:23879 |      0.152 ms |        1 | avg:    0.006 ms | max:    0.006 ms | max at:  10442.128094 s
+  execute_perf.sh:24438 |      0.232 ms |        7 | avg:    0.005 ms | max:    0.008 ms | max at:  10440.905841 s
+  CrShutdownDetec:23881 |      0.057 ms |        1 | avg:    0.004 ms | max:    0.004 ms | max at:  10442.135972 s
+  sandbox_ipc_thr:23865 |      0.083 ms |        1 | avg:    0.004 ms | max:    0.004 ms | max at:  10442.134146 s
+  Chrome_FileThre:23888 |      0.430 ms |        3 | avg:    0.004 ms | max:    0.005 ms | max at:  10441.783900 s
+  Chrome_CacheThr:23891 |      0.162 ms |        4 | avg:    0.003 ms | max:    0.004 ms | max at:  10441.729189 s
+  Chrome_ProcessL:23890 |      0.096 ms |        4 | avg:    0.003 ms | max:    0.003 ms | max at:  10441.729601 s
+  notify-osd:1645       |      0.094 ms |        1 | avg:    0.003 ms | max:    0.003 ms | max at:  10442.223007 s
+  upstart:1202          |      0.176 ms |        1 | avg:    0.000 ms | max:    0.000 ms | max at:      0.000000 s
+  :23951:23951          |      0.138 ms |        1 | avg:    0.000 ms | max:    0.000 ms | max at:      0.000000 s
+ -----------------------------------------------------------------------------------------------------------------
+  TOTAL:                |   1711.035 ms |     1769 |
+ ---------------------------------------------------
+

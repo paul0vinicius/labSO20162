@@ -1,0 +1,26 @@
+
+ -----------------------------------------------------------------------------------------------------------------
+  Task                  |   Runtime ms  | Switches | Average delay ms | Maximum delay ms | Maximum delay at       |
+ -----------------------------------------------------------------------------------------------------------------
+  indicator-datet:1454  |      0.299 ms |        1 | avg: 1058.174 ms | max: 1058.174 ms | max at:  10412.780270 s
+  kworker/u8:0:23207    |      0.061 ms |        1 | avg:  945.778 ms | max:  945.778 ms | max at:  10412.779995 s
+  kworker/1:0:23264     |      0.068 ms |        1 | avg:  917.712 ms | max:  917.712 ms | max at:  10412.779925 s
+  compiz:1633           |      0.208 ms |        2 | avg:  459.863 ms | max:  919.690 ms | max at:  10412.780163 s
+  Xorg:925              |      0.474 ms |        6 | avg:  183.645 ms | max: 1101.681 ms | max at:  10412.780056 s
+  gnome-terminal-:19519 |      0.597 ms |        5 | avg:  120.672 ms | max:  603.200 ms | max at:  10412.780825 s
+  watchdog/1:11         |      0.000 ms |        1 | avg:   70.433 ms | max:   70.433 ms | max at:  10412.774248 s
+  watchdog/2:16         |      0.000 ms |        1 | avg:   45.945 ms | max:   45.945 ms | max at:  10412.774248 s
+  watchdog/0:10         |      0.000 ms |        1 | avg:   44.002 ms | max:   44.002 ms | max at:  10412.574240 s
+  watchdog/3:21         |      0.000 ms |        1 | avg:   25.579 ms | max:   25.579 ms | max at:  10412.778248 s
+  wpa_supplicant:977    |      0.041 ms |        1 | avg:    0.829 ms | max:    0.829 ms | max at:  10412.780863 s
+  perf:(4)              |      7.443 ms |        4 | avg:    0.767 ms | max:    1.754 ms | max at:  10412.781672 s
+  upstart-dbus-br:1326  |      0.064 ms |        1 | avg:    0.117 ms | max:    0.117 ms | max at:  10412.780904 s
+  dbus-daemon:1289      |      0.195 ms |        1 | avg:    0.032 ms | max:    0.032 ms | max at:  10412.780630 s
+  gdbus:(2)             |      0.061 ms |        1 | avg:    0.015 ms | max:    0.015 ms | max at:  10412.780570 s
+  a.out:(4)             |      2.391 ms |        8 | avg:    0.013 ms | max:    0.068 ms | max at:  10411.677577 s
+  migration/3:22        |      0.000 ms |        2 | avg:    0.006 ms | max:    0.006 ms | max at:  10411.677650 s
+  migration/2:17        |      0.000 ms |        1 | avg:    0.005 ms | max:    0.005 ms | max at:  10411.675773 s
+ -----------------------------------------------------------------------------------------------------------------
+  TOTAL:                |     11.902 ms |       39 |
+ ---------------------------------------------------
+

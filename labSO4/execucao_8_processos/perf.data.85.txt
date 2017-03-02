@@ -1,0 +1,26 @@
+
+ -----------------------------------------------------------------------------------------------------------------
+  Task                  |   Runtime ms  | Switches | Average delay ms | Maximum delay ms | Maximum delay at       |
+ -----------------------------------------------------------------------------------------------------------------
+  compiz:1633           |      0.074 ms |        1 | avg: 1014.579 ms | max: 1014.579 ms | max at:  10447.103398 s
+  kworker/3:0:23293     |      0.015 ms |        1 | avg:  879.855 ms | max:  879.855 ms | max at:  10447.103473 s
+  indicator-datet:1454  |      0.354 ms |        5 | avg:   75.987 ms | max:  379.851 ms | max at:  10447.103487 s
+  perf:(7)              |    207.668 ms |       14 | avg:    1.262 ms | max:   11.966 ms | max at:  10446.003576 s
+  upstart-dbus-br:1326  |      0.071 ms |        1 | avg:    0.448 ms | max:    0.448 ms | max at:  10447.104529 s
+  dbus-daemon:1289      |      0.149 ms |        1 | avg:    0.047 ms | max:    0.047 ms | max at:  10447.103950 s
+  unity-panel-ser:1436  |      0.223 ms |        1 | avg:    0.037 ms | max:    0.037 ms | max at:  10447.104305 s
+  a.out:(4)             |      3.080 ms |        4 | avg:    0.018 ms | max:    0.053 ms | max at:  10446.045068 s
+  ksoftirqd/0:3         |      0.067 ms |        3 | avg:    0.016 ms | max:    0.017 ms | max at:  10446.039637 s
+  rcu_sched:7           |      0.297 ms |       19 | avg:    0.014 ms | max:    0.024 ms | max at:  10446.009517 s
+  kworker/u8:69:19230   |      5.921 ms |        2 | avg:    0.014 ms | max:    0.019 ms | max at:  10446.003630 s
+  kworker/u8:1:23267    |      0.019 ms |        1 | avg:    0.012 ms | max:    0.012 ms | max at:  10446.009484 s
+  gdbus:(2)             |      0.315 ms |        5 | avg:    0.011 ms | max:    0.032 ms | max at:  10447.104100 s
+  ksoftirqd/1:13        |      0.016 ms |        1 | avg:    0.011 ms | max:    0.011 ms | max at:  10445.991623 s
+  ksoftirqd/2:18        |      0.099 ms |        6 | avg:    0.010 ms | max:    0.017 ms | max at:  10446.015633 s
+  avahi-daemon:715      |      0.184 ms |        1 | avg:    0.007 ms | max:    0.007 ms | max at:  10446.014247 s
+  migration/0:9         |      0.000 ms |        1 | avg:    0.005 ms | max:    0.005 ms | max at:  10446.045152 s
+  migration/2:17        |      0.000 ms |        2 | avg:    0.004 ms | max:    0.004 ms | max at:  10446.003486 s
+ -----------------------------------------------------------------------------------------------------------------
+  TOTAL:                |    218.552 ms |       69 |
+ ---------------------------------------------------
+

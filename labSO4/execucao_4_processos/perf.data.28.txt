@@ -1,0 +1,33 @@
+
+ -----------------------------------------------------------------------------------------------------------------
+  Task                  |   Runtime ms  | Switches | Average delay ms | Maximum delay ms | Maximum delay at       |
+ -----------------------------------------------------------------------------------------------------------------
+  gpg-agent:1397        |      0.021 ms |        1 | avg: 1044.160 ms | max: 1044.160 ms | max at:  10418.108616 s
+  avahi-daemon:715      |      0.072 ms |        1 | avg:  947.330 ms | max:  947.330 ms | max at:  10418.108635 s
+  kworker/0:0:22055     |      0.010 ms |        1 | avg:  889.452 ms | max:  889.452 ms | max at:  10418.147886 s
+  kworker/u8:2:23459    |      0.079 ms |        2 | avg:  550.786 ms | max: 1101.565 ms | max at:  10418.145692 s
+  evince:23167          |      1.687 ms |        2 | avg:  532.084 ms | max: 1064.166 ms | max at:  10418.108707 s
+  indicator-datet:1454  |      0.304 ms |        1 | avg:  386.976 ms | max:  386.976 ms | max at:  10418.109428 s
+  kworker/2:1:23514     |      0.126 ms |        4 | avg:  218.725 ms | max:  873.898 ms | max at:  10418.108331 s
+  kworker/1:0:23264     |      0.089 ms |        5 | avg:  179.888 ms | max:  899.246 ms | max at:  10418.145678 s
+  nautilus:1567         |      1.306 ms |        4 | avg:  143.063 ms | max:  572.233 ms | max at:  10418.113016 s
+  gnome-terminal-:19519 |      0.747 ms |        4 | avg:  120.005 ms | max:  479.789 ms | max at:  10418.112586 s
+  rcu_sched:7           |      0.136 ms |       11 | avg:  100.320 ms | max: 1103.362 ms | max at:  10418.145787 s
+  compiz:1633           |      4.626 ms |       23 | avg:   46.299 ms | max: 1062.908 ms | max at:  10418.109269 s
+  Xorg:925              |      3.461 ms |       25 | avg:   43.205 ms | max: 1067.351 ms | max at:  10418.108405 s
+  perf:(4)              |     91.497 ms |       16 | avg:    1.157 ms | max:    6.596 ms | max at:  10418.154476 s
+  upstart-dbus-br:1326  |      0.072 ms |        1 | avg:    0.518 ms | max:    0.518 ms | max at:  10418.110491 s
+  a.out:(4)             |      2.079 ms |        6 | avg:    0.080 ms | max:    0.244 ms | max at:  10417.039334 s
+  unity-panel-ser:1436  |      0.244 ms |        1 | avg:    0.061 ms | max:    0.061 ms | max at:  10418.110246 s
+  dbus-daemon:1289      |      0.200 ms |        1 | avg:    0.056 ms | max:    0.056 ms | max at:  10418.109814 s
+  gdbus:(2)             |      0.315 ms |        2 | avg:    0.048 ms | max:    0.080 ms | max at:  10418.110014 s
+  kworker/u8:1:23267    |      0.037 ms |        4 | avg:    0.016 ms | max:    0.052 ms | max at:  10418.145755 s
+  ksoftirqd/1:13        |      0.075 ms |        3 | avg:    0.007 ms | max:    0.015 ms | max at:  10417.014465 s
+  ksoftirqd/0:3         |      0.015 ms |        1 | avg:    0.007 ms | max:    0.007 ms | max at:  10417.018450 s
+  migration/3:22        |      0.000 ms |        1 | avg:    0.006 ms | max:    0.006 ms | max at:  10417.039361 s
+  migration/0:9         |      0.000 ms |        1 | avg:    0.005 ms | max:    0.005 ms | max at:  10417.034458 s
+  migration/1:12        |      0.000 ms |        3 | avg:    0.004 ms | max:    0.004 ms | max at:  10417.011994 s
+ -----------------------------------------------------------------------------------------------------------------
+  TOTAL:                |    107.199 ms |      124 |
+ ---------------------------------------------------
+

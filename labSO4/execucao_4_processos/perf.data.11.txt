@@ -1,0 +1,26 @@
+
+ -----------------------------------------------------------------------------------------------------------------
+  Task                  |   Runtime ms  | Switches | Average delay ms | Maximum delay ms | Maximum delay at       |
+ -----------------------------------------------------------------------------------------------------------------
+  wpa_supplicant:977    |      0.032 ms |        1 | avg:  703.152 ms | max:  703.152 ms | max at:  10406.193106 s
+  gmain:(5)             |      0.030 ms |        1 | avg:  595.180 ms | max:  595.180 ms | max at:  10406.193139 s
+  irqbalance:949        |      0.376 ms |        1 | avg:  521.909 ms | max:  521.909 ms | max at:  10406.192353 s
+  kworker/3:0:23293     |      0.031 ms |        2 | avg:  483.200 ms | max:  966.352 ms | max at:  10406.192298 s
+  gnome-terminal-:19519 |      0.363 ms |        2 | avg:  420.327 ms | max:  840.082 ms | max at:  10406.192732 s
+  kworker/u8:1:23267    |      0.062 ms |        3 | avg:  306.177 ms | max:  918.361 ms | max at:  10406.192313 s
+  compiz:1633           |      0.248 ms |        4 | avg:  199.306 ms | max:  796.911 ms | max at:  10406.193025 s
+  perf:(4)              |      5.053 ms |        6 | avg:  184.466 ms | max:  967.938 ms | max at:  10406.194150 s
+  rtkit-daemon:(2)      |      0.030 ms |        3 | avg:  167.862 ms | max:  503.206 ms | max at:  10406.193169 s
+  kworker/u8:0:23207    |      0.193 ms |        2 | avg:    0.439 ms | max:    0.873 ms | max at:  10406.193199 s
+  kworker/u8:2:23459    |      0.010 ms |        1 | avg:    0.341 ms | max:    0.341 ms | max at:  10406.193552 s
+  evince:23167          |      0.049 ms |        1 | avg:    0.296 ms | max:    0.296 ms | max at:  10406.193666 s
+  nautilus:1567         |      0.092 ms |        1 | avg:    0.191 ms | max:    0.191 ms | max at:  10406.193574 s
+  Xorg:925              |      0.423 ms |        3 | avg:    0.162 ms | max:    0.292 ms | max at:  10406.193297 s
+  a.out:(4)             |      2.567 ms |        4 | avg:    0.007 ms | max:    0.008 ms | max at:  10405.092066 s
+  migration/1:12        |      0.000 ms |        2 | avg:    0.006 ms | max:    0.006 ms | max at:  10405.092306 s
+  migration/2:17        |      0.000 ms |        1 | avg:    0.006 ms | max:    0.006 ms | max at:  10405.092141 s
+  migration/3:22        |      0.000 ms |        1 | avg:    0.004 ms | max:    0.004 ms | max at:  10405.090809 s
+ -----------------------------------------------------------------------------------------------------------------
+  TOTAL:                |      9.560 ms |       39 |
+ ---------------------------------------------------
+
