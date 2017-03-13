@@ -1,0 +1,12 @@
+index || programa_e_args || pid || uid || gid || start_epoch || end_epoch || return_value
+ls || 31364 || 1000 || 31359 || 1488421314 || 1488421314 || a.out
+exemploPipe.c
+log.txt
+out.txt
+pipe.c
+pipeLinux.c
+xeu_parte12_hugoG_pauloV.c
+xeu_parte3_hugoG_pauloV.c
+xeu_parte4_hugoG_pauloV.c
+
+ls | grep r || 31391 || 1000 || 31359 || 1488421327 || 1488421327 || 
