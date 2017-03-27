@@ -4,18 +4,11 @@ class fifo:
 	def __init__(self):
 		self.fifo = []
 		
-	def evict(self):
-		page_id = self.fifo.pop(0)
-		put(page_id)
-	
-		
-		
   def put(self, frameId):
     """Allocates this frameId for some page"""
     # Notice that in the physical memory we don't care about the pageId, we only
     # care about the fact we were requested to allocate a certain frameId
-    
-    return put(frame_id)
+	self.fifo.append(frameId)
     
     pass
 
