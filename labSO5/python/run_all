@@ -2,7 +2,7 @@ npages=100
 clock=10
 
 #for alg in fifo nru aging second-chance
-for alg in fifo
+for alg in fifo second-chance nru
 do
     for nframes in 4 8 16 32
     do

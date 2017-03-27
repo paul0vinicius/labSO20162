@@ -21,7 +21,7 @@ class PhysicalMemory:
       "aging": Aging(),
       "second-chance": SecondChance()
     }
-    
+
     self.algorithm = self.algorithms[algorithm]
 
   def put(self, frameId):

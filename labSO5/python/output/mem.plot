@@ -3,3 +3,11 @@ nfaults,nframes,alg
 6765,32,fifo
 9597,4,fifo
 9194,8,fifo
+8419,16,nru
+6825,32,nru
+9615,4,nru
+9199,8,nru
+8358,16,second-chance
+6747,32,second-chance
+9595,4,second-chance
+9197,8,second-chance
