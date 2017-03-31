@@ -1,4 +1,8 @@
 nfaults,nframes,alg
+8382,16,aging
+6765,32,aging
+9597,4,aging
+9194,8,aging
 8382,16,fifo
 6765,32,fifo
 9597,4,fifo

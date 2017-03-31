@@ -85,17 +85,28 @@ class NRU(Algorithm):
 
 
 class Aging(Algorithm):
+  global REFERENCED
+  global NOT_REFERENCED
+  REFERENCED = 1
+  NOT_REFERENCED = not REFERENCED
+
   def __init__(self):
-    pass
+    self.page_frames = []
 
   def put(self, frameId):
-    pass
+    self.page_frames.append([frameId, 0])
 
   def evict(self):
-    pass
+    self.page_frames.sort(key=lambda pf: pf[1])
+
+    return self.page_frames.pop(0)[0]
 
   def clock(self):
-    pass
+    for p_frame in self.page_frames:
+      p_frame[1] >>= 1
 
   def access(self, frameId, isWrite):
-    pass
+    for p_frame in self.page_frames:
+      if p_frame[0] == frameId:
+        p_frame[1] >>= 1
+        p_frame[1] | 128
