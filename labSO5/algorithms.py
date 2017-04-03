@@ -68,8 +68,8 @@ class NRU(Algorithm):
     self.page_frames.append([frameId, REFERENCED, MODIFIED])
 
   def evict(self):
+    self.page_frames.sort(key=lambda pf: pf[2])
     self.page_frames.sort(key=lambda pf: pf[1])
-    self.page_frames.sort(key=lambda pf: pf[0])
 
     return self.page_frames.pop(0)[0]
 
@@ -109,4 +109,4 @@ class Aging(Algorithm):
     for p_frame in self.page_frames:
       if p_frame[0] == frameId:
         p_frame[1] >>= 1
-        p_frame[1] | 32768
+        p_frame[1] |= 256
