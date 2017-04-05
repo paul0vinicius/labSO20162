@@ -4,7 +4,7 @@
 npages=1500000
 clock=200
 
-for trace in trace.2
+for trace in trace.1
 do
     for alg in fifo nru aging second-chance
     #for alg in aging
